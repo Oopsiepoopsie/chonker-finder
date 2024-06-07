@@ -15,9 +15,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <a className="font-sans hover:font-serif mb-3 text-2xl ">
+            <p className="font-sans hover:font-serif mb-3 text-2xl ">
               Chonk Chonk
-            </a>
+            </p>
             <Image
               src="/chonker.png"
               alt="Johnny What's Up"
@@ -31,7 +31,7 @@ export default function Home() {
 
       <div>
         <a
-          href="https://www.youtube.com/watch?v=s9oQRKsROF8&t=1s" 
+          href="https://www.youtube.com/watch?v=s9oQRKsROF8&t=1s"
           target="_blank"
           rel="noopener noreferrer"
         >
