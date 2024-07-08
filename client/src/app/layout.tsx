@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Chonker Finder",
-  description: "We Want to Find CHONKERS",
-  icons: {
-    icon: "/chonker.png"
+  description: "FIND CHONKERS IN CARLETON",
+  icons:{
+    icon: '/chonker.png'
   }
 };
 
