@@ -16,6 +16,7 @@ export default async function Home() {
         {data.imageUrl && (
           <Image src={data.imageUrl} alt="Fetched Image" width={500} height={300} />
         )}
+        {data.people.map((person : String, index : number) => <p key={index}>{person}</p>)}
       </div>
     );
   } catch (error) {
