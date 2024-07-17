@@ -22,21 +22,32 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+
+
+
+**Create a `.flaskenv` file in the project root directory:**
+```bash
+#set flask environment variables
+FLASK_APP=server.py
+FLASK_ENV=development
+FLASK_RUN_PORT=8080
+FLASK_DEBUG = True
+```
+Difference between `.flaskenv` and `.env`
+- **.flaskenv**: Use for automatic loading by Flask when running `flask run`.
+- **.env**: Use with `python-dotenv` for *manual* loading of environment variables.
+
+
 **Start the backend server:**
 
 ```bash
-#use environment variables
-export FLASK_APP=server.py
-export FLASK_ENV=development
-export FLASK_RUN_PORT=8080
 flask run
-
-#or
-flask --app server.py run --port 8080
+# or
+# flask --app server.py run --port 8080
 ```
 
 
-### Frontend Setup
+## Frontend Setup
 
 **Navigate to the frontend directory:**
 
