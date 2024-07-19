@@ -7,9 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Chonker Finder",
   description: "FIND CHONKERS IN CARLETON",
-  icons:{
-    icon: '/chonker.png'
-  }
 };
 
 export default function RootLayout({
