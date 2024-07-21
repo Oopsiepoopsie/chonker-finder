@@ -55,26 +55,21 @@ flask run
 cd client
 ```
 
+**create an .env.local file and set it to**
+```bash
+# .env.local
+NEXT_PUBLIC_GOOGLE_MAP_API = <Google Map API key>
+NEXT_PUBLIC_GOOGLE_MAP_ID = <Google mapId>
+```
+
 **Install frontend dependencies:**
 
 ```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
 bun install
 ```
 
 **Start the frontend development server:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
 bun dev
 ```
