@@ -6,6 +6,7 @@ import {
   AdvancedMarker,
   Pin,
 } from "@vis.gl/react-google-maps";
+import { MarkerWithInfowindow } from "./marker-with-infowindow";
 
 const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAP_API as string;
 const MAP_ID = process.env.NEXT_PUBLIC_GOOGLE_MAP_ID as string;
@@ -54,12 +55,17 @@ export default function MapComponent() {
         // reuseMaps={true}
         // disableDefaultUI={true}
       >
+        <MarkerWithInfowindow position={defaultMapCenter}></MarkerWithInfowindow>
+        {/*
         <AdvancedMarker 
-          position={defaultMapCenter} 
+          position={defaultMapCenter}
+          title={'AdvancedMarker with customized pin.'} 
           >
-          <Pin/>
-          {/* <img src={'/chonker.png'} width={128} height={128} /> */}
+          <Pin background={'#22ccff'} borderColor={'#1e89a1'} scale={1.5}>
+            <img src={'/chonker.png'} width={40} height={40} />
+          </Pin>
         </AdvancedMarker>
+        */}
       </Map>
     </APIProvider>
   );
