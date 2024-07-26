@@ -4,11 +4,12 @@ import {
   defaultOnClusterClickHandler,
   type Marker,
   MarkerClusterer,
-  SuperClusterAlgorithm,
   type Cluster,
 } from "@googlemaps/markerclusterer";
+import { algorithm, renderer } from "../config/marker-clusterer";
 import type { Chonker } from "../lib/chonkers";
 import { ChonkerMarker } from "./chonker-marker";
+import { unstable_noStore as noStore } from "next/cache";
 
 //define the ClusteredChonkerMarkersProps
 export type ClusteredTreeMarkersProps = {
@@ -24,6 +25,7 @@ export type ClusteredTreeMarkersProps = {
 export const ClusteredChonkerMarkers = ({
   chonkers,
 }: ClusteredTreeMarkersProps) => {
+  noStore();
   //state for all the markers
   const [markers, setMarkers] = useState<{ [key: string]: Marker }>({});
   //state for the selected Chonker key for info-window
@@ -31,7 +33,7 @@ export const ClusteredChonkerMarkers = ({
     null
   );
 
-  //get the selected Chonker data
+  //get the selected Chonker data for info window (could be null when the chonkers get filtered)
   const selectedChonker = useMemo(
     () =>
       chonkers && selectedChonkerKey
@@ -42,13 +44,17 @@ export const ClusteredChonkerMarkers = ({
 
   //config for MarkerClusterer
   const map = useMap();
-  const algorithm = new SuperClusterAlgorithm({ radius: 200, maxZoom: 30 });
-  const onClusterClickHandler = (e: google.maps.MapMouseEvent, cluster: Cluster, map: google.maps.Map) => {
+  //click handler for the clusterer
+  const onClusterClickHandler = (
+    e: google.maps.MapMouseEvent,
+    cluster: Cluster,
+    map: google.maps.Map
+  ) => {
     //when cluster clicked, close the info window first!!!
     setSelectedChonkerKey(null);
-    defaultOnClusterClickHandler(e, cluster, map)
+    defaultOnClusterClickHandler(e, cluster, map);
   };
-  
+
   // create the markerClusterer once the map is available and update it when
   // the markers are changed
   const clusterer = useMemo(() => {
@@ -57,6 +63,7 @@ export const ClusteredChonkerMarkers = ({
       map,
       algorithm,
       onClusterClick: onClusterClickHandler,
+      renderer,
     });
   }, [map]);
 
@@ -81,7 +88,7 @@ export const ClusteredChonkerMarkers = ({
       if (marker) {
         return { ...markers, [key]: marker };
       } else {
-      //if not,  we remove the property with the key 
+        //if not,  we remove the property with the key
         const { [key]: _, ...newMarkers } = markers;
         return newMarkers;
       }
@@ -107,7 +114,9 @@ export const ClusteredChonkerMarkers = ({
           setMarkerRef={setMarkerRef}
         />
       ))}
-      {selectedChonkerKey && (
+      {/**we need to have the key and the content 
+       as we may filter out the data and info window remains after filter)*/}
+      {selectedChonkerKey && selectedChonker && (
         <InfoWindow
           anchor={markers[selectedChonkerKey]}
           onCloseClick={handleInfoWindowClose}
