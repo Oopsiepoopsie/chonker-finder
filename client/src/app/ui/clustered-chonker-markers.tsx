@@ -1,10 +1,11 @@
 import { useMap, InfoWindow } from "@vis.gl/react-google-maps";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
+  defaultOnClusterClickHandler,
   type Marker,
   MarkerClusterer,
   SuperClusterAlgorithm,
-  type SuperClusterOptions,
+  type Cluster,
 } from "@googlemaps/markerclusterer";
 import type { Chonker } from "../lib/chonkers";
 import { ChonkerMarker } from "./chonker-marker";
@@ -23,7 +24,7 @@ export type ClusteredTreeMarkersProps = {
 export const ClusteredChonkerMarkers = ({
   chonkers,
 }: ClusteredTreeMarkersProps) => {
-  //state for the markers
+  //state for all the markers
   const [markers, setMarkers] = useState<{ [key: string]: Marker }>({});
   //state for the selected Chonker key for info-window
   const [selectedChonkerKey, setSelectedChonkerKey] = useState<string | null>(
@@ -39,16 +40,23 @@ export const ClusteredChonkerMarkers = ({
     [chonkers, selectedChonkerKey]
   );
 
+  //config for MarkerClusterer
+  const map = useMap();
+  const algorithm = new SuperClusterAlgorithm({ radius: 200, maxZoom: 30 });
+  const onClusterClickHandler = (e: google.maps.MapMouseEvent, cluster: Cluster, map: google.maps.Map) => {
+    //when cluster clicked, close the info window first!!!
+    setSelectedChonkerKey(null);
+    defaultOnClusterClickHandler(e, cluster, map)
+  };
+  
   // create the markerClusterer once the map is available and update it when
   // the markers are changed
-  const map = useMap();
-  const algorithm = new SuperClusterAlgorithm({radius: 200, maxZoom: 30})
   const clusterer = useMemo(() => {
     if (!map) return null;
-
     return new MarkerClusterer({
       map,
       algorithm,
+      onClusterClick: onClusterClickHandler,
     });
   }, [map]);
 
@@ -62,16 +70,19 @@ export const ClusteredChonkerMarkers = ({
 
   // this callback will effectively get passsed as ref to the markers to keep
   // tracks of markers currently on the map
+  // takes a marker and its key as argument
   const setMarkerRef = useCallback((marker: Marker | null, key: string) => {
     setMarkers((markers) => {
+      //if the marker and its key already exists
       if ((marker && markers[key]) || (!marker && !markers[key]))
         return markers;
 
+      //if we have a new marker, add it to markers state
       if (marker) {
         return { ...markers, [key]: marker };
       } else {
+      //if not,  we remove the property with the key 
         const { [key]: _, ...newMarkers } = markers;
-
         return newMarkers;
       }
     });
