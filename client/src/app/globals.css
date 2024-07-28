@@ -3,12 +3,35 @@
 @tailwind utilities;
 
 /* styles.css */
-@media (max-width: 640px) { /* Tailwind's 'sm' breakpoint is 640px */
-    .mobile-bottom {
-      position: fixed; /* Use fixed positioning to keep it at the bottom */
-      bottom: 50px; /* Stick it to the bottom of the viewport */
-      top: auto;
-      left: 50%; /* Center horizontally */
-      transform: translateX(-50%);
-    }
+@media (max-width: 640px) {
+
+  /* Tailwind's 'sm' breakpoint is 640px */
+  .mobile-bottom {
+    position: fixed;
+    /* Use fixed positioning to keep it at the bottom */
+    bottom: 50px;
+    /* Stick it to the bottom of the viewport */
+    top: auto;
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+  }
+}
+
+@layer components {
+
+  /*Custom the scrollbar, setting it to non-display */
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*button animation */
+
+  .active {
+    @apply rounded-xl border-4 border-white;
+  }
+
+  .button {
+    @apply w-20 h-20 bg-blue-100 flex flex-shrink-0 items-center justify-center rounded-full hover:rounded-xl transition-all duration-75;
+  }
 }

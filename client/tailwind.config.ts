@@ -12,9 +12,24 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+
       },
+      colors: {
+        blue: { 900: '#070341', 100: '#22ccff' },
+        pink: { 900: '#FF9FF6' },
+      },
+      width: {
+        60: '60px',
+
+      },
+      height: {
+        460: "300px",
+      },
+
     },
+
   },
-  plugins: [],
+  plugins: [
+  ],
 };
 export default config;

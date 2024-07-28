@@ -1,36 +1,34 @@
-import {useCallback} from 'react';
-
+import { useCallback, useState } from 'react';
 import type { CategoryData } from '../lib/chonkers';
 
 type ControlPanelProps = {
   categories: Array<CategoryData>;
-  onCategoryChange: (value: string | null) => void;
+  onCategoryChange: (label: string | null) => void;
 };
 
 export const ControlPanel = ({
   categories,
   onCategoryChange
 }: ControlPanelProps) => {
+  const [selectedButton, setSelectedButton] = useState<string | null>(null);
   const handleCategoryChange = useCallback(
-    (e: React.ChangeEvent<HTMLSelectElement>) => {
-      onCategoryChange(e.target.value || null);
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      onCategoryChange(e.currentTarget.name || null);
+      setSelectedButton(e.currentTarget.name);
     },
     [onCategoryChange]
   );
   return (
-    <div className="absolute top-20 right-20 w-72 border rounded bg-white p-3 shadow-md cursor-auto text-sm leading-tight box-border outline-none focus:outline-black mobile-bottom">
-      <div className="flex items-center">
-        <label className="mr-2">Filter Chonkers:</label>{' '}
-        <select onChange={handleCategoryChange} className="flex-grow border rounded text-center">
-          <option value={''}>All Chonkers</option>
-
-          {categories.map(category => (
-            <option key={category.key} value={category.key}>
-              {category.label} ({category.count})
-            </option>
-          ))}
-        </select>
-      </div>
+    <div className=" fixed  top-[138px] left-8 h-460 w-60 space-y-2 py-5 
+    rounded-3xl bg-blue-900 flex flex-col justify-between items-center overflow-y-auto custom-scrollbar  ">
+      {/* button for "All-chonkers" */}
+      <button className={`${selectedButton === '' ? 'active' : ''}  w-12 h-12  bg-pink-900 
+      flex flex-shrink-0 items-center justify-center p-2 rounded-3xl hover:rounded-xl `} onClick={handleCategoryChange}><img src="\mouse-trap-svgrepo-com.png" /></button>
+      {categories.map(category => (
+        <><button key={category.key} name={category.key} className={`${selectedButton === category.key ? 'active' : ''} 
+        w-12 h-12 bg-blue-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl transition-all duration-75 linear`} onClick={handleCategoryChange}>
+          <img src={` /${category.label}.png`} alt="chonker avt" width={23} height={23} /></button>
+        </>))}
     </div>
   );
 };

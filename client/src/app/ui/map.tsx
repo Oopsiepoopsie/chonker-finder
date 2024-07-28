@@ -54,17 +54,19 @@ export default function MapComponent() {
         restriction={restriction}
         //randomly generated mapID...
         mapId={MAP_ID}
-        // disableDefaultUI={true}
+      // disableDefaultUI={true}
       >
         {filteredChonkers && (
           <ClusteredChonkerMarkers chonkers={filteredChonkers} />
         )}
       </Map>
 
-      <ControlPanel
-        categories={categories}
-        onCategoryChange={setSelectedCategory}
-      />
+      <div className={"flex contents-center"}>
+        <ControlPanel
+          categories={categories}
+          onCategoryChange={setSelectedCategory}
+        />
+      </div>
     </APIProvider>
   );
 }
