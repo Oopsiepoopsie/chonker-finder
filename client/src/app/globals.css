@@ -27,11 +27,21 @@
 
   /*button animation */
 
-  .active {
-    @apply rounded-xl border-4 border-white;
+
+
+  .category-btn {
+    @apply relative w-12 h-12 bg-blue-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl focus:rounded-xl focus:border-4 focus:border-white transition-all duration-75 ease-linear;
+
   }
 
-  .button {
-    @apply w-20 h-20 bg-blue-100 flex flex-shrink-0 items-center justify-center rounded-full hover:rounded-xl transition-all duration-75;
+  /*NEED TO BE TESTED!!! by adjusting left-* */
+  .category-number-feature {
+    @apply absolute left-9 bottom-8 bg-red-600 rounded-full text-white text-xs font-bold w-5 h-5 flex justify-center items-center transition-all transform scale-0 group-hover:scale-100;
+  }
+
+  /*when click the button, the effect number feature on the top right corner bounce forth and back*/
+  .category-btn:focus-within .category-number-feature {
+    @apply scale-100 transform transition-all duration-200 delay-100 translate-x-[-4px] translate-y-[4px];
+
   }
 }

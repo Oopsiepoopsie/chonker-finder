@@ -17,9 +17,10 @@ const config: Config = {
       colors: {
         blue: { 900: '#070341', 100: '#22ccff' },
         pink: { 900: '#FF9FF6' },
+        red: { 600: "#FA4343" },
       },
       width: {
-        60: '60px',
+        62: '70px',
 
       },
       height: {
