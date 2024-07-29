@@ -20,20 +20,32 @@ export const renderer = {
         <circle cx="120" cy="120" opacity=".1" r="130" />
         </svg>`);
 
+        // create img element for svg
+        const img = document.createElement('img');
+        img.src = `data:image/svg+xml;base64,${svg}`;
+        img.className = "w-full h-full";
+
+        // create label div
+        const labelDiv = document.createElement('div');
+        labelDiv.innerText = String(count);
+        labelDiv.className = `
+            absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+            text-white text-xs
+        `;
+
+        // create container div
+        const containerDiv = document.createElement('div');
+        containerDiv.className = "relative w-12 h-12";
+
+        // append img and label to container
+        containerDiv.appendChild(img);
+        containerDiv.appendChild(labelDiv);
+
         // create marker using svg icon
-        return new google.maps.Marker({
+        return new google.maps.marker.AdvancedMarkerElement({
         position,
-        icon: {
-            url: `data:image/svg+xml;base64,${svg}`,
-            scaledSize: new google.maps.Size(50, 50),
-        },
-        label: {
-            text: String(count),
-            color: "rgba(255,255,255,1.5)",
-            fontSize: "12px",
-            // fontFamily:"Arial",
-        },
-        // adjust zIndex to be above other markers
+        //
+        content: containerDiv,
         zIndex: 1000 + count,
         });
     },
