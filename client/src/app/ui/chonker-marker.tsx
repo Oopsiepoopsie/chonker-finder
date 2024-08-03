@@ -38,15 +38,15 @@ export const ChonkerMarker = (props: ChonkerMarkerProps) => {
     [setMarkerRef, chonker.key]
   );
 
-  const img_src = chonker.category? `/${chonker.category}.png` : '/chonker.png'
-  
+  const img_src = chonker.category ? `/${chonker.category}.png` : '/chonker.png'
+
   return (
     //when the element mounts, it calls ref with the AdvancedMarkerElement instance as the argument
     //when it unmounts, the ref callback is called again, but this time with 'null' as the argument.
     <AdvancedMarker position={chonker.position} ref={ref} onClick={handleClick}>
-        <Pin background={'#22ccff'} borderColor={'#ffffff'} scale={2.5}>
-            <img src={img_src} width={40} height={40} />
-        </Pin>
+      <Pin background={'#ff6f69'} borderColor={'#FFFFFF'} scale={2.5}>
+        <img src={img_src} width={40} height={40} />
+      </Pin>
     </AdvancedMarker>
   );
 };

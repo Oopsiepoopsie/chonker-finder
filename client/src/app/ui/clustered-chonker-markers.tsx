@@ -64,6 +64,7 @@ export const ClusteredChonkerMarkers = ({
       algorithm,
       onClusterClick: onClusterClickHandler,
       renderer,
+
     });
   }, [map]);
 

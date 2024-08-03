@@ -15,20 +15,13 @@ const config: Config = {
 
       },
       colors: {
-        blue: { 900: '#070341', 100: '#22ccff' },
         pink: { 900: '#FF9FF6' },
         red: { 600: "#FA4343" },
+        green: { 1000: "#00ac8c" },
+        violet: { 100: "#b3baff" },
+        sand: { 100: "#fffaf3" },
       },
-      width: {
-        62: '70px',
-
-      },
-      height: {
-        460: "300px",
-      },
-
     },
-
   },
   plugins: [
   ],

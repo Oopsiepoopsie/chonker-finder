@@ -25,23 +25,44 @@
     display: none;
   }
 
-  /*button animation */
-
-
-
   .category-btn {
-    @apply relative w-12 h-12 bg-blue-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl focus:rounded-xl focus:border-4 focus:border-white transition-all duration-75 ease-linear;
+    @apply relative w-12 h-12 bg-sand-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl focus:rounded-xl focus:bg-transparent transition-all duration-75 ease-linear;
 
   }
 
-  /*NEED TO BE TESTED!!! by adjusting left-* */
   .category-number-feature {
-    @apply absolute left-9 bottom-8 bg-red-600 rounded-full text-white text-xs font-bold w-5 h-5 flex justify-center items-center transition-all transform scale-0 group-hover:scale-100;
+    @apply absolute left-9 bottom-8 bg-red-600 rounded-full text-white text-xs font-bold w-5 h-5 flex justify-center items-center transition-all duration-100 scale-0 group-hover:scale-100;
   }
 
   /*when click the button, the effect number feature on the top right corner bounce forth and back*/
   .category-btn:focus-within .category-number-feature {
-    @apply scale-100 transform transition-all duration-200 delay-100 translate-x-[-4px] translate-y-[4px];
+    @apply transform transition-all duration-75 delay-75 scale-100;
 
+  }
+
+  /* notation block is desinated for making a box to embrace each shortcut */
+  .notation-block {
+    @apply cursor-pointer flex w-fit h-fit mr-5;
+  }
+
+  .notation-word {
+    background-color: #5b7869;
+    font-size: .7rem;
+    width: 1.6rem;
+    height: 1.1rem;
+    @apply text-white rounded-md flex justify-center items-center;
+  }
+
+  .notation-letter {
+    background-color: #5b7869;
+    font-size: .7rem;
+    width: 1.2rem;
+    height: 1.1rem;
+    @apply text-white rounded-md ml-0.5 flex justify-center items-center;
+  }
+
+  .notation-context {
+    font-family: "Segoe UI Symbol";
+    @apply text-xs text-white w-fit h-fit flex justify-center items-center ml-1;
   }
 }

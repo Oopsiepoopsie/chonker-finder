@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { ClusteredChonkerMarkers } from "./clustered-chonker-markers";
 import { type Chonker, loadChonkerDataset, getCategories } from "../lib/chonkers";
 import { ControlPanel } from "./control-panel";
-
+import { Notation } from "./notation-block";
 
 const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string;
 const MAP_ID = process.env.NEXT_PUBLIC_MAP_ID as string;
@@ -36,11 +36,32 @@ const restriction = {
   },
 };
 
+// Shortcut keys
+const keyMap = {
+  TOGGLE_SIDEBAR: 'ctrl+z',
+}
 
 export default function MapComponent() {
   //chonkers state for chonkers data, array of Chonker
   const [chonkers, setChonkers] = useState<Chonker[]>();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [sideBarState, setSideBarState] = useState(true);
+
+  // Method for toggling the sidebar's state
+  const sideBarHandler = () => { setSideBarState(pre => !pre) }
+
+  // Adding event listerner for keydown 
+  useEffect(() => {
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.ctrlKey && event.key === 'z') {
+        sideBarHandler();
+      }
+    };
+    document.addEventListener('keydown', handleKeyPress);
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [sideBarHandler]);
 
   // load data asynchronously
   useEffect(() => {
@@ -70,15 +91,16 @@ export default function MapComponent() {
         restriction={restriction}
         //randomly generated mapID...
         mapId={MAP_ID}
-      // disableDefaultUI={true}
+      // disableDefaultUI={false}
       >
         {filteredChonkers && <ClusteredChonkerMarkers chonkers={filteredChonkers} />}
       </Map>
-
-      <ControlPanel
+      {sideBarState && (<ControlPanel
         categories={categories}
         onCategoryChange={setSelectedCategory}
-      />
+      />)}
+      <div className=" absolute top-[88%] w-screen h-fit flex justify-center flex-wrap-reverse">
+        <Notation word={"ctrl"} letter={"Z"} context={"hide/show sidebar"} />      </div>
     </APIProvider>
   );
 }
