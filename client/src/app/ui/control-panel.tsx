@@ -22,16 +22,16 @@ export const ControlPanel = ({
   );
 
   return (
-    <div className=" absolute top-[138px] left-8 h-72 w-16 space-y-2 py-5 rounded-3xl bg-green-1000 flex flex-col justify-between items-center custom-scrollbar overflow-x-hidden overflow-y-scroll">
+    <div className="sidebar custom-scrollbar">
       {/* button for "All-chonkers" */}
-      <button className="relative w-12 h-12 bg-violet-100 flex flex-shrink-0 items-center justify-center p-2 rounded-3xl focus:bg-transparent hover:rounded-xl transition-all duration-75" onClick={handleCategoryChange}>
+      <button className="relative w-12 h-12 bg-violet-100 flex flex-shrink-0 items-center justify-center p-2 rounded-3xl focus:bg-transparent hover:rounded-xl transition-all duration-75 all-chonkers-btn" onClick={handleCategoryChange}>
         <img src="\mouse-trap-svgrepo-com.png" alt="mouse-trap" />
       </button>
 
       {categories.map(category => (
 
         <button name={category.key} key={category.key} className={"group category-btn "} onClick={handleCategoryChange} >
-          <img src={`/${category.key}.png`} alt="chonker avt" width={23} height={23} draggable={false} />
+          <img src={`/${category.key}.png`} alt="chonker avt" className='chonker-avt' draggable={false} />
           <span className={"category-number-feature"}
           >{category.count}
           </span>

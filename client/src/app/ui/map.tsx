@@ -99,8 +99,8 @@ export default function MapComponent() {
         categories={categories}
         onCategoryChange={setSelectedCategory}
       />)}
-      <div className=" absolute top-[88%] w-screen h-fit flex justify-center flex-wrap-reverse">
-        <Notation word={"ctrl"} letter={"Z"} context={"hide/show sidebar"} />      </div>
+      <div className="absolute top-[88%] w-screen h-fit justify-center  md:hidden hidden lg:flex flex-wrap-reverse">
+        <Notation word={"ctrl"} letter={"Z"} context={"hide/show sidebar"} /></div>
     </APIProvider>
   );
 }

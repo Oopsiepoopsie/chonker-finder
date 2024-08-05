@@ -2,23 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles.css */
-@media (max-width: 640px) {
+/* phone screen */
+@media (max-width: 740px) {
 
-  /* Tailwind's 'sm' breakpoint is 640px */
-  .mobile-bottom {
-    position: fixed;
-    /* Use fixed positioning to keep it at the bottom */
-    bottom: 50px;
-    /* Stick it to the bottom of the viewport */
-    top: auto;
-    left: 50%;
-    /* Center horizontally */
-    transform: translateX(-50%);
+  .sidebar {
+    bottom: 30px;
+    left: 18%;
+    width: 63%;
+    height: 4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 .7rem;
+  }
+
+  .sidebar .category-btn {
+    margin-left: .6rem;
+
   }
 }
 
+/* tablet screen */
+@media (min-width: 740px) and (max-width: 922px) {
+
+  .sidebar {
+    bottom: 30px;
+    left: 18%;
+    width: 63%;
+    max-width: 70%;
+    height: 4.7rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 1.4rem;
+  }
+
+  .category-btn {
+    margin-left: .7rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+  }
+
+  .all-chonkers-btn {
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+
+  }
+
+  .category-number-feature {
+    left: 2.5rem;
+    bottom: 2.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: medium;
+  }
+
+}
+
+/* pc screen */
+@media (min-width: 922px) {
+  .sidebar {
+    top: 22%;
+    left: 2rem;
+    max-height: 53.2%;
+    width: 4rem;
+    padding: 1.25rem 0;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .category-btn {
+    margin-top: 0.7rem;
+  }
+}
+
+
 @layer components {
+
+  .sidebar {
+    @apply absolute rounded-3xl bg-green-1000 flex justify-between items-center;
+  }
 
   /*Custom the scrollbar, setting it to non-display */
   .custom-scrollbar::-webkit-scrollbar {
@@ -26,8 +89,13 @@
   }
 
   .category-btn {
-    @apply relative w-12 h-12 bg-sand-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl focus:rounded-xl focus:bg-transparent transition-all duration-75 ease-linear;
+    @apply relative w-12 h-12 bg-sand-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl focus:rounded-3xl focus:bg-transparent transition-all duration-75 ease-linear;
 
+  }
+
+  .chonker-avt {
+    width: 42%;
+    height: 50%;
   }
 
   .category-number-feature {
