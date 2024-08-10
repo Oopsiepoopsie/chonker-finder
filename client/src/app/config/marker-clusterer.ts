@@ -1,4 +1,4 @@
-//variables for the MarkerClusterer constructor parameters
+//parameters for the MarkerClusterer constructor
 
 import { Cluster, ClusterStats, SuperClusterAlgorithm } from "@googlemaps/markerclusterer";
 

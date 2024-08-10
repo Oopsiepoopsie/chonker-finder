@@ -25,10 +25,20 @@ export default function MapComponent() {
   //chonkers state for chonkers data, array of Chonker
   const [chonkers, setChonkers] = useState<Chonker[]>();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  
 
   // load data asynchronously
   useEffect(() => {
-    loadChonkerDataset().then((data) => setChonkers(data));
+    const fetchChonkers = async () => {
+      try {
+        const data = await loadChonkerDataset();
+        setChonkers(data);
+      } catch (error) {
+        console.error('Failed to fetch chonkers:', error);
+      }
+    };
+
+    fetchChonkers();
   }, []);
 
   // get category information for the filter-dropdown
