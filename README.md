@@ -1,6 +1,12 @@
 # chonker-finder
-FINDING CHONKERS in Carleton (working in progress)
+FINDING CHONKERS at Carleton University (working in progress)
 
 Demo picture:
-![image](https://github.com/user-attachments/assets/e0c93d38-d3d9-4e4d-9191-369885cabfd8)
+![image](https://github.com/user-attachments/assets/b68c6d96-8219-4812-b7fe-e3485757f383)
 
+
+## Server
+Backend written in Python using Flask as the web framework to build API endpoints and connect to database
+
+## Client
+Frontend written in TypeScript using Next.js as the framework for client UI
