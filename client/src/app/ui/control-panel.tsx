@@ -1,36 +1,42 @@
-import {useCallback} from 'react';
-
+import { useCallback, useState, useEffect } from 'react';
 import type { CategoryData } from '../lib/chonkers';
 
 type ControlPanelProps = {
   categories: Array<CategoryData>;
-  onCategoryChange: (value: string | null) => void;
+  onCategoryChange: (label: string | null) => void;
 };
 
 export const ControlPanel = ({
   categories,
   onCategoryChange
 }: ControlPanelProps) => {
+  const [selectedButton, setSelectedButton] = useState<string | null>(null);
+
+
   const handleCategoryChange = useCallback(
-    (e: React.ChangeEvent<HTMLSelectElement>) => {
-      onCategoryChange(e.target.value || null);
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      onCategoryChange(e.currentTarget.name || null);
+      setSelectedButton(e.currentTarget.name);
     },
     [onCategoryChange]
   );
-  return (
-    <div className="absolute top-20 right-20 w-72 border rounded bg-white p-3 shadow-md cursor-auto text-sm leading-tight box-border outline-none focus:outline-black mobile-bottom">
-      <div className="flex items-center">
-        <label className="mr-2">Filter Chonkers:</label>{' '}
-        <select onChange={handleCategoryChange} className="flex-grow border rounded text-center">
-          <option value={''}>All Chonkers</option>
 
-          {categories.map(category => (
-            <option key={category.key} value={category.key}>
-              {category.label} ({category.count})
-            </option>
-          ))}
-        </select>
-      </div>
+  return (
+    <div className="sidebar custom-scrollbar">
+      {/* button for "All-chonkers" */}
+      <button className="relative w-12 h-12 bg-violet-100 flex flex-shrink-0 items-center justify-center p-2 rounded-3xl focus:bg-transparent hover:rounded-xl transition-all duration-75 all-chonkers-btn" onClick={handleCategoryChange}>
+        <img src="\mouse-trap-svgrepo-com.png" alt="mouse-trap" />
+      </button>
+
+      {categories.map(category => (
+
+        <button name={category.key} key={category.key} className={"group category-btn "} onClick={handleCategoryChange} >
+          <img src={`/${category.key}.png`} alt="chonker avt" className='chonker-avt' draggable={false} />
+          <span className={"category-number-feature"}
+          >{category.count}
+          </span>
+        </button>
+      ))}
     </div>
   );
 };

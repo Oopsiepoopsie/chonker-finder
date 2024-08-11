@@ -1,763 +1,762 @@
 [
-    {
-      "description": "cute groundhog spotted!",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38699874309201,
-        "lng": -75.69709689233588
-      }
-    },
-    {
-      "description": "a skunk wandering around",
-      "category": "skunk",
-      "position": {
-        "lat": 45.39123456789012,
-        "lng": -75.69567890123456
-      }
-    },
-    {
-      "description": "squirrel climbing a tree",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.38056789012345,
-        "lng": -75.68912345678901
-      }
-    },
-    {
-      "description": "rabbit hopping in the grass",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38234567890123,
-        "lng": -75.69234567890123
-      }
-    },
-    {
-      "description": "raccoon searching for food",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38456789012345,
-        "lng": -75.69098765432109
-      }
-    },
-    {
-      "description": "fox spotted in the distance",
-      "category": "fox",
-      "position": {
-        "lat": 45.37987654321098,
-        "lng": -75.70098765432109
-      }
-    },
-    {
-      "description": "Karen complaining about noise",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38765432109876,
-        "lng": -75.69432109876543
-      }
-    },
-    {
-      "description": "playful groundhog",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38312345678901,
-        "lng": -75.69876543210987
-      }
-    },
-    {
-      "description": "skunk near the trash",
-      "category": "skunk",
-      "position": {
-        "lat": 45.38876543210987,
-        "lng": -75.69654321098765
-      }
-    },
-    {
-      "description": "squirrel eating nuts",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.39098765432109,
-        "lng": -75.69321098765432
-      }
-    },
-    {
-      "description": "rabbit hiding in the bushes",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38543210987654,
-        "lng": -75.69109876543210
-      }
-    },
-    {
-      "description": "raccoon climbing a fence",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38109876543210,
-        "lng": -75.69012345678901
-      }
-    },
-    {
-      "description": "fox running across the street",
-      "category": "fox",
-      "position": {
-        "lat": 45.39012345678901,
-        "lng": -75.69987654321098
-      }
-    },
-    {
-      "description": "Karen arguing with a neighbor",
-      "category": "Karen",
-      "position": {
-        "lat": 45.37943210987654,
-        "lng": -75.69456789012345
-      }
-    },
-    {
-      "description": "groundhog digging a hole",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38234567890123,
-        "lng": -75.69909876543210
-      }
-    },
-    {
-      "description": "skunk crossing the road",
-      "category": "skunk",
-      "position": {
-        "lat": 45.38789012345678,
-        "lng": -75.69543210987654
-      }
-    },
-    {
-      "description": "squirrel jumping from branch to branch",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.39109876543210,
-        "lng": -75.69210987654321
-      }
-    },
-    {
-      "description": "rabbit eating clover",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38432109876543,
-        "lng": -75.69187654321098
-      }
-    },
-    {
-      "description": "raccoon family spotted",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38087654321098,
-        "lng": -75.69043210987654
-      }
-    },
-    {
-      "description": "fox hunting",
-      "category": "fox",
-      "position": {
-        "lat": 45.37998765432109,
-        "lng": -75.70043210987654
-      }
-    },
-    {
-      "description": "Karen calling the manager",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38843210987654,
-        "lng": -75.69487654321098
-      }
-    },
-    {
-      "description": "groundhog eating grass",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38654321098765,
-        "lng": -75.69321098765432
-      }
-    },
-    {
-      "description": "skunk hiding in a burrow",
-      "category": "skunk",
-      "position": {
-        "lat": 45.39065432109876,
-        "lng": -75.69654321098765
-      }
-    },
-    {
-      "description": "squirrel gathering acorns",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.38210987654321,
-        "lng": -75.69143210987654
-      }
-    },
-    {
-      "description": "rabbit running across the field",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38498765432109,
-        "lng": -75.69087654321098
-      }
-    },
-    {
-      "description": "raccoon swimming in the pond",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38123456789012,
-        "lng": -75.68976543210987
-      }
-    },
-    {
-      "description": "fox resting under a tree",
-      "category": "fox",
-      "position": {
-        "lat": 45.37912345678901,
-        "lng": -75.69965432109876
-      }
-    },
-    {
-      "description": "Karen yelling at kids",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38732109876543,
-        "lng": -75.69409876543210
-      }
-    },
-    {
-      "description": "groundhog peeking out of its burrow",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38432109876543,
-        "lng": -75.69832109876543
-      }
-    },
-    {
-      "description": "skunk foraging in the garden",
-      "category": "skunk",
-      "position": {
-        "lat": 45.39012345678901,
-        "lng": -75.69609876543210
-      }
-    },
-    {
-      "description": "squirrel drinking from a puddle",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.38187654321098,
-        "lng": -75.69123456789012
-      }
-    },
-    {
-      "description": "rabbit sniffing flowers",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38321098765432,
-        "lng": -75.69043210987654
-      }
-    },
-    {
-      "description": "raccoon digging through trash",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38043210987654,
-        "lng": -75.68987654321098
-      }
-    },
-    {
-      "description": "fox playing with its cubs",
-      "category": "fox",
-      "position": {
-        "lat": 45.37965432109876,
-        "lng": -75.69876543210987
-      }
-    },
-    {
-      "description": "Karen making a scene",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38609876543210,
-        "lng": -75.69387654321098
-      }
-    },
-    {
-      "description": "groundhog building a nest",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38687654321098,
-        "lng": -75.69909876543210
-      }
-    },
-    {
-      "description": "skunk hiding under a porch",
-      "category": "skunk",
-      "position": {
-        "lat": 45.38987654321098,
-        "lng": -75.69576543210987
-      }
-    },
-    {
-      "description": "squirrel hiding its stash",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.38098765432109,
-        "lng": -75.69009876543210
-      }
-    },
-    {
-      "description": "rabbit running along a trail",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38309876543210,
-        "lng": -75.68987654321098
-      }
-    },
-    {
-      "description": "raccoon balancing on a fence",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38276543210987,
-        "lng": -75.69165432109876
-      }
-    },
-    {
-      "description": "fox trotting through the forest",
-      "category": "fox",
-      "position": {
-        "lat": 45.38012345678901,
-        "lng": -75.70098765432109
-      }
-    },
-    {
-      "description": "Karen on a rampage",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38654321098765,
-        "lng": -75.69543210987654
-      }
-    },
-    {
-      "description": "groundhog in a flower bed",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38809876543210,
-        "lng": -75.69312345678901
-      }
-    },
-    {
-      "description": "skunk moving slowly",
-      "category": "skunk",
-      "position": {
-        "lat": 45.38543210987654,
-        "lng": -75.69210987654321
-      }
-    },
-    {
-      "description": "squirrel chattering",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.38165432109876,
-        "lng": -75.69109876543210
-      }
-    },
-    {
-      "description": "rabbit hopping down the path",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38412345678901,
-        "lng": -75.69065432109876
-      }
-    },
-    {
-      "description": "raccoon sneaking around",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.37987654321098,
-        "lng": -75.69043210987654
-      }
-    },
-    {
-      "description": "fox stalking prey",
-      "category": "fox",
-      "position": {
-        "lat": 45.38109876543210,
-        "lng": -75.69876543210987
-      }
-    },
-    {
-      "description": "Karen scolding someone",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38587654321098,
-        "lng": -75.69487654321098
-      }
-    },
-    {
-      "description": "groundhog munching on leaves",
-      "category": "groundhog",
-      "position": {
-        "lat": 45.38709876543210,
-        "lng": -75.69212345678901
-      }
-    },
-    {
-      "description": "skunk sleeping in the shade",
-      "category": "skunk",
-      "position": {
-        "lat": 45.39032109876543,
-        "lng": -75.69665432109876
-      }
-    },
-    {
-      "description": "squirrel scampering",
-      "category": "squirrel",
-      "position": {
-        "lat": 45.38287654321098,
-        "lng": -75.69154321098765
-      }
-    },
-    {
-      "description": "rabbit nibbling grass",
-      "category": "rabbit",
-      "position": {
-        "lat": 45.38365432109876,
-        "lng": -75.69098765432109
-      }
-    },
-    {
-      "description": "raccoon exploring",
-      "category": "raccoon",
-      "position": {
-        "lat": 45.38143210987654,
-        "lng": -75.69087654321098
-      }
-    },
-    {
-      "description": "fox on the prowl",
-      "category": "fox",
-      "position": {
-        "lat": 45.38054321098765,
-        "lng": -75.69832109876543
-      }
-    },
-    {
-      "description": "Karen making demands",
-      "category": "Karen",
-      "position": {
-        "lat": 45.38676543210987,
-        "lng": -75.69598765432109
-      }
-    },
-    {
-      "description": "raccoon rummaging through the trash",
-      "category": "raccoon",
-      "position": {
-          "lat": 45.381234,
-          "lng": -75.692345
-      }
+  {
+    "description": "cute groundhog spotted!",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38699874309201,
+      "lng": -75.69709689233588
+    }
   },
   {
-      "description": "rabbit hopping across the path",
-      "category": "rabbit",
-      "position": {
-          "lat": 45.379876,
-          "lng": -75.690123
-      }
+    "description": "a skunk wandering around",
+    "category": "skunk",
+    "position": {
+      "lat": 45.39123456789012,
+      "lng": -75.69567890123456
+    }
   },
   {
-      "description": "fox watching from the bushes",
-      "category": "fox",
-      "position": {
-          "lat": 45.388654,
-          "lng": -75.688901
-      }
+    "description": "squirrel climbing a tree",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.38056789012345,
+      "lng": -75.68912345678901
+    }
   },
   {
-      "description": "squirrel gathering nuts",
-      "category": "squirrel",
-      "position": {
-          "lat": 45.387321,
-          "lng": -75.693210
-      }
+    "description": "rabbit hopping in the grass",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38234567890123,
+      "lng": -75.69234567890123
+    }
   },
   {
-      "description": "skunk wandering near the pond",
-      "category": "skunk",
-      "position": {
-          "lat": 45.380789,
-          "lng": -75.691456
-      }
+    "description": "raccoon searching for food",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38456789012345,
+      "lng": -75.69098765432109
+    }
   },
   {
-      "description": "Karen leaving food for the animals",
-      "category": "Karen",
-      "position": {
-          "lat": 45.384567,
-          "lng": -75.689876
-      }
+    "description": "fox spotted in the distance",
+    "category": "fox",
+    "position": {
+      "lat": 45.37987654321098,
+      "lng": -75.70098765432109
+    }
+  },
+  {
+    "description": "Karen complaining about noise",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38765432109876,
+      "lng": -75.69432109876543
+    }
+  },
+  {
+    "description": "playful groundhog",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38312345678901,
+      "lng": -75.69876543210987
+    }
+  },
+  {
+    "description": "skunk near the trash",
+    "category": "skunk",
+    "position": {
+      "lat": 45.38876543210987,
+      "lng": -75.69654321098765
+    }
+  },
+  {
+    "description": "squirrel eating nuts",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.39098765432109,
+      "lng": -75.69321098765432
+    }
+  },
+  {
+    "description": "rabbit hiding in the bushes",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38543210987654,
+      "lng": -75.69109876543210
+    }
+  },
+  {
+    "description": "raccoon climbing a fence",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38109876543210,
+      "lng": -75.69012345678901
+    }
+  },
+  {
+    "description": "fox running across the street",
+    "category": "fox",
+    "position": {
+      "lat": 45.39012345678901,
+      "lng": -75.69987654321098
+    }
+  },
+  {
+    "description": "Karen arguing with a neighbor",
+    "category": "Karen",
+    "position": {
+      "lat": 45.37943210987654,
+      "lng": -75.69456789012345
+    }
+  },
+  {
+    "description": "groundhog digging a hole",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38234567890123,
+      "lng": -75.69909876543210
+    }
+  },
+  {
+    "description": "skunk crossing the road",
+    "category": "skunk",
+    "position": {
+      "lat": 45.38789012345678,
+      "lng": -75.69543210987654
+    }
+  },
+  {
+    "description": "squirrel jumping from branch to branch",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.39109876543210,
+      "lng": -75.69210987654321
+    }
+  },
+  {
+    "description": "rabbit eating clover",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38432109876543,
+      "lng": -75.69187654321098
+    }
+  },
+  {
+    "description": "raccoon family spotted",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38087654321098,
+      "lng": -75.69043210987654
+    }
+  },
+  {
+    "description": "fox hunting",
+    "category": "fox",
+    "position": {
+      "lat": 45.37998765432109,
+      "lng": -75.70043210987654
+    }
+  },
+  {
+    "description": "Karen calling the manager",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38843210987654,
+      "lng": -75.69487654321098
+    }
+  },
+  {
+    "description": "groundhog eating grass",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38654321098765,
+      "lng": -75.69321098765432
+    }
+  },
+  {
+    "description": "skunk hiding in a burrow",
+    "category": "skunk",
+    "position": {
+      "lat": 45.39065432109876,
+      "lng": -75.69654321098765
+    }
+  },
+  {
+    "description": "squirrel gathering acorns",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.38210987654321,
+      "lng": -75.69143210987654
+    }
+  },
+  {
+    "description": "rabbit running across the field",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38498765432109,
+      "lng": -75.69087654321098
+    }
+  },
+  {
+    "description": "raccoon swimming in the pond",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38123456789012,
+      "lng": -75.68976543210987
+    }
+  },
+  {
+    "description": "fox resting under a tree",
+    "category": "fox",
+    "position": {
+      "lat": 45.37912345678901,
+      "lng": -75.69965432109876
+    }
+  },
+  {
+    "description": "Karen yelling at kids",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38732109876543,
+      "lng": -75.69409876543210
+    }
+  },
+  {
+    "description": "groundhog peeking out of its burrow",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38432109876543,
+      "lng": -75.69832109876543
+    }
+  },
+  {
+    "description": "skunk foraging in the garden",
+    "category": "skunk",
+    "position": {
+      "lat": 45.39012345678901,
+      "lng": -75.69609876543210
+    }
+  },
+  {
+    "description": "squirrel drinking from a puddle",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.38187654321098,
+      "lng": -75.69123456789012
+    }
+  },
+  {
+    "description": "rabbit sniffing flowers",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38321098765432,
+      "lng": -75.69043210987654
+    }
+  },
+  {
+    "description": "raccoon digging through trash",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38043210987654,
+      "lng": -75.68987654321098
+    }
+  },
+  {
+    "description": "fox playing with its cubs",
+    "category": "fox",
+    "position": {
+      "lat": 45.37965432109876,
+      "lng": -75.69876543210987
+    }
+  },
+  {
+    "description": "Karen making a scene",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38609876543210,
+      "lng": -75.69387654321098
+    }
+  },
+  {
+    "description": "groundhog building a nest",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38687654321098,
+      "lng": -75.69909876543210
+    }
+  },
+  {
+    "description": "skunk hiding under a porch",
+    "category": "skunk",
+    "position": {
+      "lat": 45.38987654321098,
+      "lng": -75.69576543210987
+    }
+  },
+  {
+    "description": "squirrel hiding its stash",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.38098765432109,
+      "lng": -75.69009876543210
+    }
+  },
+  {
+    "description": "rabbit running along a trail",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38309876543210,
+      "lng": -75.68987654321098
+    }
+  },
+  {
+    "description": "raccoon balancing on a fence",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38276543210987,
+      "lng": -75.69165432109876
+    }
+  },
+  {
+    "description": "fox trotting through the forest",
+    "category": "fox",
+    "position": {
+      "lat": 45.38012345678901,
+      "lng": -75.70098765432109
+    }
+  },
+  {
+    "description": "Karen on a rampage",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38654321098765,
+      "lng": -75.69543210987654
+    }
+  },
+  {
+    "description": "groundhog in a flower bed",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38809876543210,
+      "lng": -75.69312345678901
+    }
+  },
+  {
+    "description": "skunk moving slowly",
+    "category": "skunk",
+    "position": {
+      "lat": 45.38543210987654,
+      "lng": -75.69210987654321
+    }
+  },
+  {
+    "description": "squirrel chattering",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.38165432109876,
+      "lng": -75.69109876543210
+    }
+  },
+  {
+    "description": "rabbit hopping down the path",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38412345678901,
+      "lng": -75.69065432109876
+    }
+  },
+  {
+    "description": "raccoon sneaking around",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.37987654321098,
+      "lng": -75.69043210987654
+    }
+  },
+  {
+    "description": "fox stalking prey",
+    "category": "fox",
+    "position": {
+      "lat": 45.38109876543210,
+      "lng": -75.69876543210987
+    }
+  },
+  {
+    "description": "Karen scolding someone",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38587654321098,
+      "lng": -75.69487654321098
+    }
+  },
+  {
+    "description": "groundhog munching on leaves",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.38709876543210,
+      "lng": -75.69212345678901
+    }
+  },
+  {
+    "description": "skunk sleeping in the shade",
+    "category": "skunk",
+    "position": {
+      "lat": 45.39032109876543,
+      "lng": -75.69665432109876
+    }
+  },
+  {
+    "description": "squirrel scampering",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.38287654321098,
+      "lng": -75.69154321098765
+    }
+  },
+  {
+    "description": "rabbit nibbling grass",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.38365432109876,
+      "lng": -75.69098765432109
+    }
+  },
+  {
+    "description": "raccoon exploring",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.38143210987654,
+      "lng": -75.69087654321098
+    }
+  },
+  {
+    "description": "fox on the prowl",
+    "category": "fox",
+    "position": {
+      "lat": 45.38054321098765,
+      "lng": -75.69832109876543
+    }
+  },
+  {
+    "description": "Karen making demands",
+    "category": "Karen",
+    "position": {
+      "lat": 45.38676543210987,
+      "lng": -75.69598765432109
+    }
+  },
+  {
+    "description": "raccoon rummaging through the trash",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.381234,
+      "lng": -75.692345
+    }
+  },
+  {
+    "description": "rabbit hopping across the path",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.379876,
+      "lng": -75.690123
+    }
+  },
+  {
+    "description": "fox watching from the bushes",
+    "category": "fox",
+    "position": {
+      "lat": 45.388654,
+      "lng": -75.688901
+    }
+  },
+  {
+    "description": "squirrel gathering nuts",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.387321,
+      "lng": -75.693210
+    }
+  },
+  {
+    "description": "skunk wandering near the pond",
+    "category": "skunk",
+    "position": {
+      "lat": 45.380789,
+      "lng": -75.691456
+    }
+  },
+  {
+    "description": "Karen leaving food for the animals",
+    "category": "Karen",
+    "position": {
+      "lat": 45.384567,
+      "lng": -75.689876
+    }
   },
   {
     "description": "skunk crossing the path",
     "category": "skunk",
     "position": {
-        "lat": 45.390123,
-        "lng": -75.692678
+      "lat": 45.390123,
+      "lng": -75.692678
     }
   },
   {
-      "description": "squirrel playing in the grass",
-      "category": "squirrel",
-      "position": {
-          "lat": 45.380234,
-          "lng": -75.690345
-      }
+    "description": "squirrel playing in the grass",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.380234,
+      "lng": -75.690345
+    }
   },
   {
-      "description": "fox seen near the bushes",
-      "category": "fox",
-      "position": {
-          "lat": 45.386543,
-          "lng": -75.688234
-      }
+    "description": "fox seen near the bushes",
+    "category": "fox",
+    "position": {
+      "lat": 45.386543,
+      "lng": -75.688234
+    }
   },
   {
-      "description": "groundhog resting by the tree",
-      "category": "groundhog",
-      "position": {
-          "lat": 45.382789,
-          "lng": -75.694567
-      }
+    "description": "groundhog resting by the tree",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.382789,
+      "lng": -75.694567
+    }
   },
   {
-      "description": "rabbit hiding in the undergrowth",
-      "category": "rabbit",
-      "position": {
-          "lat": 45.379654,
-          "lng": -75.689345
-      }
+    "description": "rabbit hiding in the undergrowth",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.379654,
+      "lng": -75.689345
+    }
   },
   {
-      "description": "raccoon climbing a fence",
-      "category": "raccoon",
-      "position": {
-          "lat": 45.388234,
-          "lng": -75.693456
-      }
+    "description": "raccoon climbing a fence",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.388234,
+      "lng": -75.693456
+    }
   },
   {
-      "description": "Karen taking pictures of wildlife",
-      "category": "Karen",
-      "position": {
-          "lat": 45.383456,
-          "lng": -75.689012
-      }
+    "description": "Karen taking pictures of wildlife",
+    "category": "Karen",
+    "position": {
+      "lat": 45.383456,
+      "lng": -75.689012
+    }
   },
   {
     "description": "fox scavenging for food",
     "category": "fox",
     "position": {
-        "lat": 45.381987,
-        "lng": -75.692345
+      "lat": 45.381987,
+      "lng": -75.692345
     }
   },
   {
-      "description": "groundhog exploring the park",
-      "category": "groundhog",
-      "position": {
-          "lat": 45.388765,
-          "lng": -75.690123
-      }
+    "description": "groundhog exploring the park",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.388765,
+      "lng": -75.690123
+    }
   },
   {
-      "description": "rabbit nibbling on some grass",
-      "category": "rabbit",
-      "position": {
-          "lat": 45.382345,
-          "lng": -75.689678
-      }
+    "description": "rabbit nibbling on some grass",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.382345,
+      "lng": -75.689678
+    }
   },
   {
-      "description": "squirrel storing acorns",
-      "category": "squirrel",
-      "position": {
-          "lat": 45.379876,
-          "lng": -75.692345
-      }
+    "description": "squirrel storing acorns",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.379876,
+      "lng": -75.692345
+    }
   },
   {
-      "description": "skunk near the picnic area",
-      "category": "skunk",
-      "position": {
-          "lat": 45.386789,
-          "lng": -75.691234
-      }
+    "description": "skunk near the picnic area",
+    "category": "skunk",
+    "position": {
+      "lat": 45.386789,
+      "lng": -75.691234
+    }
   },
   {
-      "description": "raccoon searching through the trash",
-      "category": "raccoon",
-      "position": {
-          "lat": 45.387654,
-          "lng": -75.693210
-      }
+    "description": "raccoon searching through the trash",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.387654,
+      "lng": -75.693210
+    }
   },
   {
-      "description": "Karen setting up a wildlife camera",
-      "category": "Karen",
-      "position": {
-          "lat": 45.384567,
-          "lng": -75.689456
-      }
+    "description": "Karen setting up a wildlife camera",
+    "category": "Karen",
+    "position": {
+      "lat": 45.384567,
+      "lng": -75.689456
+    }
   },
   {
-      "description": "skunk under a bench",
-      "category": "skunk",
-      "position": {
-          "lat": 45.389012,
-          "lng": -75.691789
-      }
+    "description": "skunk under a bench",
+    "category": "skunk",
+    "position": {
+      "lat": 45.389012,
+      "lng": -75.691789
+    }
   },
   {
-      "description": "squirrel chasing another squirrel",
-      "category": "squirrel",
-      "position": {
-          "lat": 45.380678,
-          "lng": -75.693456
-      }
+    "description": "squirrel chasing another squirrel",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.380678,
+      "lng": -75.693456
+    }
   },
   {
-      "description": "rabbit hiding near a bush",
-      "category": "rabbit",
-      "position": {
-          "lat": 45.379321,
-          "lng": -75.689876
-      }
+    "description": "rabbit hiding near a bush",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.379321,
+      "lng": -75.689876
+    }
   },
   {
-      "description": "fox resting in the shade",
-      "category": "fox",
-      "position": {
-          "lat": 45.386234,
-          "lng": -75.688345
-      }
+    "description": "fox resting in the shade",
+    "category": "fox",
+    "position": {
+      "lat": 45.386234,
+      "lng": -75.688345
+    }
   },
   {
-      "description": "groundhog sunbathing on a rock",
-      "category": "groundhog",
-      "position": {
-          "lat": 45.384567,
-          "lng": -75.692678
-      }
+    "description": "groundhog sunbathing on a rock",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.384567,
+      "lng": -75.692678
+    }
   },
   {
-      "description": "raccoon playing with a toy",
-      "category": "raccoon",
-      "position": {
-          "lat": 45.387987,
-          "lng": -75.690123
-      }
+    "description": "raccoon playing with a toy",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.387987,
+      "lng": -75.690123
+    }
   },
   {
-      "description": "Karen feeding the animals",
-      "category": "Karen",
-      "position": {
-          "lat": 45.383210,
-          "lng": -75.689432
-      }
+    "description": "Karen feeding the animals",
+    "category": "Karen",
+    "position": {
+      "lat": 45.383210,
+      "lng": -75.689432
+    }
   },
   {
-      "description": "squirrel climbing a tree",
-      "category": "squirrel",
-      "position": {
-          "lat": 45.380123,
-          "lng": -75.691234
-      }
+    "description": "squirrel climbing a tree",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.380123,
+      "lng": -75.691234
+    }
   },
   {
-      "description": "skunk near the water fountain",
-      "category": "skunk",
-      "position": {
-          "lat": 45.389321,
-          "lng": -75.688901
-      }
+    "description": "skunk near the water fountain",
+    "category": "skunk",
+    "position": {
+      "lat": 45.389321,
+      "lng": -75.688901
+    }
   },
   {
-      "description": "rabbit hopping on the trail",
-      "category": "rabbit",
-      "position": {
-          "lat": 45.378678,
-          "lng": -75.692345
-      }
+    "description": "rabbit hopping on the trail",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.378678,
+      "lng": -75.692345
+    }
   },
   {
-      "description": "groundhog eating grass",
-      "category": "groundhog",
-      "position": {
-          "lat": 45.388012,
-          "lng": -75.693210
-      }
+    "description": "groundhog eating grass",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.388012,
+      "lng": -75.693210
+    }
   },
   {
-      "description": "fox observing from a distance",
-      "category": "fox",
-      "position": {
-          "lat": 45.387321,
-          "lng": -75.689876
-      }
+    "description": "fox observing from a distance",
+    "category": "fox",
+    "position": {
+      "lat": 45.387321,
+      "lng": -75.689876
+    }
   },
   {
-      "description": "raccoon making a mess",
-      "category": "raccoon",
-      "position": {
-          "lat": 45.386789,
-          "lng": -75.692678
-      }
+    "description": "raccoon making a mess",
+    "category": "raccoon",
+    "position": {
+      "lat": 45.386789,
+      "lng": -75.692678
+    }
   },
   {
-      "description": "Karen organizing a wildlife event",
-      "category": "Karen",
-      "position": {
-          "lat": 45.385678,
-          "lng": -75.689123
-      }
+    "description": "Karen organizing a wildlife event",
+    "category": "Karen",
+    "position": {
+      "lat": 45.385678,
+      "lng": -75.689123
+    }
   },
   {
-      "description": "squirrel digging a hole",
-      "category": "squirrel",
-      "position": {
-          "lat": 45.380987,
-          "lng": -75.689432
-      }
+    "description": "squirrel digging a hole",
+    "category": "squirrel",
+    "position": {
+      "lat": 45.380987,
+      "lng": -75.689432
+    }
   },
   {
-      "description": "skunk near a trail",
-      "category": "skunk",
-      "position": {
-          "lat": 45.388345,
-          "lng": -75.693456
-      }
+    "description": "skunk near a trail",
+    "category": "skunk",
+    "position": {
+      "lat": 45.388345,
+      "lng": -75.693456
+    }
   },
   {
-      "description": "rabbit in a meadow",
-      "category": "rabbit",
-      "position": {
-          "lat": 45.381654,
-          "lng": -75.690789
-      }
+    "description": "rabbit in a meadow",
+    "category": "rabbit",
+    "position": {
+      "lat": 45.381654,
+      "lng": -75.690789
+    }
   },
   {
-      "description": "groundhog on the move",
-      "category": "groundhog",
-      "position": {
-          "lat": 45.384321,
-          "lng": -75.689321
-      }
+    "description": "groundhog on the move",
+    "category": "groundhog",
+    "position": {
+      "lat": 45.384321,
+      "lng": -75.689321
+    }
   },
   {
-      "description": "fox hiding in the grass",
-      "category": "fox",
-      "position": {
-          "lat": 45.386543,
-          "lng": -75.688678
-      }
+    "description": "fox hiding in the grass",
+    "category": "fox",
+    "position": {
+      "lat": 45.386543,
+      "lng": -75.688678
+    }
   }
 ]
-  

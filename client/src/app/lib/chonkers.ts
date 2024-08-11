@@ -11,9 +11,9 @@ export type Chonker = {
 };
 
 export type CategoryData = {
-    key: string;
-    label: string;
-    count: number;
+  key: string;
+  label: string;
+  count: number;
 };
 
 // //add keys to each Chonker object
@@ -56,23 +56,23 @@ export async function loadChonkerDataset(): Promise<Chonker[]> {
 
 /*get the category data from our dataset*/
 export function getCategories(chonkers?: Chonker[]): CategoryData[] {
-    if (!chonkers) return [];
-  
-    const countByCategory: {[c: string]: number} = {};
-    //count each category
-    for (const t of chonkers) {
-      if (!countByCategory[t.category]) countByCategory[t.category] = 0;
-      countByCategory[t.category]++;
-    }
-  
-    return Object.entries(countByCategory).map(([key, value]) => {
-      const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-      return {
-        key: key,
-        label,
-        count: value
-      };
-    });
+  if (!chonkers) return [];
+
+  const countByCategory: { [c: string]: number } = {};
+  //count each category
+  for (const t of chonkers) {
+    if (!countByCategory[t.category]) countByCategory[t.category] = 0;
+    countByCategory[t.category]++;
+  }
+
+  return Object.entries(countByCategory).map(([key, value]) => {
+    const label = key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    return {
+      key: key,
+      label,
+      count: value
+    };
+  });
 }
 
 
