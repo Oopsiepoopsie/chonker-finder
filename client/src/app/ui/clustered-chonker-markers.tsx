@@ -11,6 +11,8 @@ import type { Chonker } from "../lib/chonkers";
 import { ChonkerMarker } from "./chonker-marker";
 import { unstable_noStore as noStore } from "next/cache";
 
+import Image from "next/image";
+
 //define the ClusteredChonkerMarkersProps
 export type ClusteredTreeMarkersProps = {
   //we pass in the chonkers data here!
@@ -122,7 +124,18 @@ export const ClusteredChonkerMarkers = ({
           anchor={markers[selectedChonkerKey]}
           onCloseClick={handleInfoWindowClose}
         >
-          {selectedChonker?.description}
+          <div className="text-lg">  {/* Add Tailwind class here */}
+            {selectedChonker?.description}
+            {selectedChonker?.image_path && (
+              <Image
+                className="mt-2" 
+                src={`http://127.0.0.1:8080/uploads/${selectedChonker?.image_path}`}
+                alt="marker image"
+                width = {400}
+                height= {400}
+              />
+            )}
+          </div>
         </InfoWindow>
       )}
     </>

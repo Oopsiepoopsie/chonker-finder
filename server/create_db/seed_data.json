@@ -1,0 +1,317 @@
+[
+  {
+      "description": "cute groundhog spotted!",
+      "category": "groundhog",
+      "position": {
+          "lat": 45.38699874309201,
+          "lng": -75.69709689233588
+      },
+      "img_path": "wild_groundhog.png"
+  },
+  {
+      "description": "a skunk wandering around",
+      "category": "skunk",
+      "position": {
+          "lat": 45.39123456789012,
+          "lng": -75.69567890123456
+      },
+      "img_path": "wild_skunk.png"
+  },
+  {
+      "description": "squirrel climbing a tree",
+      "category": "squirrel",
+      "position": {
+          "lat": 45.38056789012345,
+          "lng": -75.68912345678901
+      },
+      "img_path": "wild_squirrel.png"
+  },
+  {
+      "description": "rabbit hopping in the grass",
+      "category": "rabbit",
+      "position": {
+          "lat": 45.38234567890123,
+          "lng": -75.69234567890123
+      },
+      "img_path": "wild_rabbit.png"
+  },
+  {
+      "description": "raccoon searching for food",
+      "category": "raccoon",
+      "position": {
+          "lat": 45.38456789012345,
+          "lng": -75.69098765432109
+      },
+      "img_path": "wild_raccoon.png"
+  },
+  {
+      "description": "fox spotted in the distance",
+      "category": "fox",
+      "position": {
+          "lat": 45.37987654321098,
+          "lng": -75.70098765432109
+      },
+      "img_path": "wild_fox.png"
+  },
+  {
+      "description": "Karen complaining about noise",
+      "category": "Karen",
+      "position": {
+          "lat": 45.38765432109876,
+          "lng": -75.69432109876543
+      },
+      "img_path": "wild_Karen.png"
+  },
+  {
+      "description": "playful groundhog",
+      "category": "groundhog",
+      "position": {
+          "lat": 45.38312345678901,
+          "lng": -75.69876543210987
+      },
+      "img_path": "wild_groundhog.png"
+  },
+  {
+      "description": "skunk near the trash",
+      "category": "skunk",
+      "position": {
+          "lat": 45.38876543210987,
+          "lng": -75.69654321098765
+      },
+      "img_path": "wild_skunk.png"
+  },
+  {
+      "description": "squirrel eating nuts",
+      "category": "squirrel",
+      "position": {
+          "lat": 45.39098765432109,
+          "lng": -75.69321098765432
+      },
+      "img_path": "wild_squirrel.png"
+  },
+  {
+      "description": "rabbit hiding in the bushes",
+      "category": "rabbit",
+      "position": {
+          "lat": 45.38543210987654,
+          "lng": -75.69109876543210
+      },
+      "img_path": "wild_rabbit.png"
+  },
+  {
+      "description": "raccoon climbing a fence",
+      "category": "raccoon",
+      "position": {
+          "lat": 45.38109876543210,
+          "lng": -75.69012345678901
+      },
+      "img_path": "wild_raccoon.png"
+  },
+  {
+      "description": "fox running across the street",
+      "category": "fox",
+      "position": {
+          "lat": 45.39012345678901,
+          "lng": -75.69987654321098
+      },
+      "img_path": "wild_fox.png"
+  },
+  {
+      "description": "Karen arguing with a neighbor",
+      "category": "Karen",
+      "position": {
+          "lat": 45.37943210987654,
+          "lng": -75.69456789012345
+      },
+      "img_path": "wild_Karen.png"
+  },
+  {
+      "description": "groundhog digging a hole",
+      "category": "groundhog",
+      "position": {
+          "lat": 45.38234567890123,
+          "lng": -75.69909876543210
+      },
+      "img_path": "wild_groundhog.png"
+  },
+  {
+      "description": "skunk crossing the road",
+      "category": "skunk",
+      "position": {
+          "lat": 45.38789012345678,
+          "lng": -75.69543210987654
+      },
+      "img_path": "wild_skunk.png"
+  },
+  {
+      "description": "squirrel jumping from branch to branch",
+      "category": "squirrel",
+      "position": {
+          "lat": 45.39109876543210,
+          "lng": -75.69210987654321
+      },
+      "img_path": "wild_squirrel.png"
+  },
+  {
+      "description": "rabbit eating clover",
+      "category": "rabbit",
+      "position": {
+          "lat": 45.38432109876543,
+          "lng": -75.69187654321098
+      },
+      "img_path": "wild_rabbit.png"
+  },
+  {
+      "description": "raccoon family spotted",
+      "category": "raccoon",
+      "position": {
+          "lat": 45.38087654321098,
+          "lng": -75.69043210987654
+      },
+      "img_path": "wild_raccoon.png"
+  },
+  {
+      "description": "fox hunting",
+      "category": "fox",
+      "position": {
+          "lat": 45.37998765432109,
+          "lng": -75.70043210987654
+      },
+      "img_path": "wild_fox.png"
+  },
+  {
+      "description": "Karen calling the manager",
+      "category": "Karen",
+      "position": {
+          "lat": 45.38843210987654,
+          "lng": -75.69487654321098
+      },
+      "img_path": "wild_Karen.png"
+  },
+  {
+      "description": "groundhog eating grass",
+      "category": "groundhog",
+      "position": {
+          "lat": 45.38654321098765,
+          "lng": -75.69321098765432
+      },
+      "img_path": "wild_groundhog.png"
+  },
+  {
+      "description": "skunk hiding in a burrow",
+      "category": "skunk",
+      "position": {
+          "lat": 45.39065432109876,
+          "lng": -75.69654321098765
+      },
+      "img_path": "wild_skunk.png"
+  },
+  {
+      "description": "squirrel gathering acorns",
+      "category": "squirrel",
+      "position": {
+          "lat": 45.38210987654321,
+          "lng": -75.69143210987654
+      },
+      "img_path": "wild_squirrel.png"
+  },
+  {
+      "description": "rabbit running across the field",
+      "category": "rabbit",
+      "position": {
+          "lat": 45.38498765432109,
+          "lng": -75.69087654321098
+      },
+      "img_path": "wild_rabbit.png"
+  },
+  {
+      "description": "raccoon swimming in the pond",
+      "category": "raccoon",
+      "position": {
+          "lat": 45.38123456789012,
+          "lng": -75.68976543210987
+      },
+      "img_path": "wild_raccoon.png"
+  },
+  {
+      "description": "fox resting under a tree",
+      "category": "fox",
+      "position": {
+          "lat": 45.37912345678901,
+          "lng": -75.69965432109876
+      },
+      "img_path": "wild_fox.png"
+  },
+  {
+      "description": "Karen yelling at kids",
+      "category": "Karen",
+      "position": {
+          "lat": 45.38732109876543,
+          "lng": -75.69409876543210
+      },
+      "img_path": "wild_Karen.png"
+  },
+  {
+      "description": "groundhog peeking out of its burrow",
+      "category": "groundhog",
+      "position": {
+          "lat": 45.38432109876543,
+          "lng": -75.69832109876543
+      },
+      "img_path": "wild_groundhog.png"
+  },
+  {
+      "description": "skunk foraging in the garden",
+      "category": "skunk",
+      "position": {
+          "lat": 45.39012345678901,
+          "lng": -75.69609876543210
+      },
+      "img_path": "wild_skunk.png"
+  },
+  {
+      "description": "squirrel drinking from a puddle",
+      "category": "squirrel",
+      "position": {
+          "lat": 45.38343210987654,
+          "lng": -75.69232109876543
+      },
+      "img_path": "wild_squirrel.png"
+  },
+  {
+      "description": "rabbit nibbling on some leaves",
+      "category": "rabbit",
+      "position": {
+          "lat": 45.38587654321098,
+          "lng": -75.69165432109876
+      },
+      "img_path": "wild_rabbit.png"
+  },
+  {
+      "description": "raccoon eating berries",
+      "category": "raccoon",
+      "position": {
+          "lat": 45.38054321098765,
+          "lng": -75.68987654321098
+      },
+      "img_path": "wild_raccoon.png"
+  },
+  {
+      "description": "fox sneaking through the bushes",
+      "category": "fox",
+      "position": {
+          "lat": 45.37898765432109,
+          "lng": -75.70012345678901
+      },
+      "img_path": "wild_fox.png"
+  },
+  {
+      "description": "Karen complaining to the police",
+      "category": "Karen",
+      "position": {
+          "lat": 45.38987654321098,
+          "lng": -75.69454321098765
+      },
+      "img_path": "wild_Karen.png"
+  }
+]
