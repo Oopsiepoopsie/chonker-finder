@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* phone screen */
+@media (max-width: 740px) {
+
+  .sidebar {
+    bottom: 30px;
+    left: 18%;
+    width: 63%;
+    height: 4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 .7rem;
+  }
+
+  .sidebar .category-btn {
+    margin-left: .6rem;
+
+  }
+}
+
+/* tablet screen */
+@media (min-width: 740px) and (max-width: 922px) {
+
+  .sidebar {
+    bottom: 30px;
+    left: 18%;
+    width: 63%;
+    max-width: 70%;
+    height: 4.7rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 1.4rem;
+  }
+
+  .category-btn {
+    margin-left: .7rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+  }
+
+  .all-chonkers-btn {
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+
+  }
+
+  .category-number-feature {
+    left: 2.5rem;
+    bottom: 2.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: medium;
+  }
+
+}
+
+/* pc screen */
+@media (min-width: 922px) {
+  .sidebar {
+    top: 22%;
+    left: 2rem;
+    max-height: 53.2%;
+    width: 4rem;
+    padding: 1.25rem 0;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .category-btn {
+    margin-top: 0.7rem;
+  }
+}
+
+
+@layer components {
+
+  .sidebar {
+    @apply absolute rounded-3xl bg-green-1000 flex justify-between items-center;
+  }
+
+  /*Custom the scrollbar, setting it to non-display */
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-btn {
+    @apply relative w-12 h-12 bg-sand-100 flex flex-shrink-0 items-center justify-center rounded-3xl hover:rounded-xl focus:rounded-3xl focus:bg-transparent transition-all duration-75 ease-linear;
+
+  }
+
+  .chonker-avt {
+    width: 42%;
+    height: 50%;
+  }
+
+  .category-number-feature {
+    @apply absolute left-9 bottom-8 bg-red-600 rounded-full text-white text-xs font-bold w-5 h-5 flex justify-center items-center transition-all duration-100 scale-0 group-hover:scale-100;
+  }
+
+  /*when click the button, the effect number feature on the top right corner bounce forth and back*/
+  .category-btn:focus-within .category-number-feature {
+    @apply transform transition-all duration-75 delay-75 scale-100;
+
+  }
+
+  /* notation block is desinated for making a box to embrace each shortcut */
+  .notation-block {
+    @apply cursor-pointer flex w-fit h-fit mr-5;
+  }
+
+  .notation-word {
+    background-color: #5b7869;
+    font-size: .7rem;
+    width: 1.6rem;
+    height: 1.1rem;
+    @apply text-white rounded-md flex justify-center items-center;
+  }
+
+  .notation-letter {
+    background-color: #5b7869;
+    font-size: .7rem;
+    width: 1.2rem;
+    height: 1.1rem;
+    @apply text-white rounded-md ml-0.5 flex justify-center items-center;
+  }
+
+  .notation-context {
+    font-family: "Segoe UI Symbol";
+    @apply text-xs text-white w-fit h-fit flex justify-center items-center ml-1;
+  }
+}

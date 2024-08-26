@@ -1,4 +1,4 @@
-## Frontend Setup
+## Frontend Setup (Lagacy Next.js Project for Client)
 
 **Navigate to the frontend directory:**
 

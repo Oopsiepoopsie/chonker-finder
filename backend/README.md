@@ -1,22 +1,22 @@
-## Backend Setup
+# Backend Setup
 
 **Navigate to the backend directory:**
 
 ```bash
-cd server
+cd backend
 ```
 
 **Create a virtual environment:**
 
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
 **Install backend dependencies:**
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 **Create a `.env` file in the project root directory:**
