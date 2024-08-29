@@ -7,10 +7,13 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      #frontend .env.local secret
+      secrets:
+        - env_local_file
     ports:
       - "3000:3000"
-    env_file:
-      - ./frontend/.env.local
+    # env_file:
+    #   - ./frontend/.env.local
     volumes:
       - ./frontend:/frontend
       #avoid sync of node_modules in the container
@@ -22,15 +25,28 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+      #backend .env and .flaskenv secret
+      secrets:
+        - env_file
+        - flaskenv_file
     ports:
       - "8080:8080"
-    env_file:
-      - ./backend/.env
-      - ./backend/.flaskenv
+    # env_file:
+    #   - ./backend/.env
+    #   - ./backend/.flaskenv
     volumes:
       - ./backend:/backend
     networks:
       - chonker-net
+
+# defines the secrets that will be made available to your Docker services during build
+secrets:
+  env_file:
+    file: ./backend/.env
+  flaskenv_file:
+    file: ./backend/.flaskenv
+  env_local_file:
+    file: ./frontend/.env.local
 
 networks:
   chonker-net:

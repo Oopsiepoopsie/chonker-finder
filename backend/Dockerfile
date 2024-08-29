@@ -8,7 +8,9 @@ WORKDIR /backend
 
 # Install any needed packages specified in requirements.txt
 COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN --mount=type=secret,id=env_file,target=/backend/.env \
+    --mount=type=secret,id=flaskenv_file,target=/backend/.flaskenv \
+    pip3 install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
 COPY . .

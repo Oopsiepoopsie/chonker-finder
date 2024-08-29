@@ -10,7 +10,8 @@ WORKDIR /frontend
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN --mount=type=secret,id=env_local_file,target=/frontend/.env.local \
+    npm install
 
 # Copy the rest of the application code
 COPY . .
