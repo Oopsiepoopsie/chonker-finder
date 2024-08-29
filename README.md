@@ -10,3 +10,5 @@ Backend written in Python using Flask as the web framework to build API endpoint
 
 ## Frontend
 Frontend written in TypeScript using Vite and React to develop the client UI.
+
+

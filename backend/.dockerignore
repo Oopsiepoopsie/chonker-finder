@@ -1,0 +1,7 @@
+#dependencies
+venv
+__pycache__
+.flaskenv
+.env
+Dockerfile
+.dockerignore

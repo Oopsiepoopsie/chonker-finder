@@ -1,0 +1,44 @@
+#the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+# version: '3.8'
+name: chonker-finder
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./frontend/.env.local
+    volumes:
+      - ./frontend:/frontend
+      #avoid sync of node_modules in the container
+      - /frontend/node_modules
+    networks:
+      - chonker-net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend/.env
+      - ./backend/.flaskenv
+    volumes:
+      - ./backend:/backend
+    networks:
+      - chonker-net
+
+networks:
+  chonker-net:
+    driver: bridge
+
+
+# Docker port forwarding problem troubleshooting
+
+# https://stackoverflow.com/questions/39525820/docker-port-forwarding-not-working
+# https://www.reddit.com/r/docker/comments/xwfm08/why_do_i_need_to_specify_host0000_when_running_a/
+# https://stackoverflow.com/questions/7023052/configure-flask-dev-server-to-be-visible-across-the-network
